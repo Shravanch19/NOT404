@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    <div class="wrapper">
+        <div class="main-box">
+            <h1>AI Movie Downloader</h1>
+            <div class="input-box" id="input-box">
+
+                <form id="download-form">
+                    <div class="Infos">
+                        <label for="is-Ind" class="form-label">
+                            <input type="checkbox" id="is-Ind" name="is-movie"> Is Indian?
+                        </label>
+                        <label for="is-series" class="form-label">
+                            <input type="checkbox" id="is-series" name="is-series"> Is this a series?
+                        </label>
+                    </div>
+                    <div class="form-main">
+                        <input type="text" id="movie-name" name="movie-name" placeholder="Enter movie/series name"
+                            required>
+                        <button type="submit">Download</button>
+                    </div>
+                </form>
+
+                <!-- Select Season -->
+                <div class="SC" id="select-container">
+                    <div id="season-select-container" class="SSC">
+                        <label for="season-number" class="form-label">Select Season:</label>
+                        <select id="season-number" name="season-number">
+                            <option value="">Select Season</option>
+                        </select>
+                    </div>
+                    <button id="submit-btn">Submit</button>
+                </div>
+
+                <!-- Quality-Links -->
+                <div class="quality-links-container" id="quality-links-container">
+                    <H3>Quality-Links..</H3>
+
+
+                    <div class="Waiting" id="Waiting">
+                        <p id="Waiting-text" class="Waiting-text">Please Wait..</p>
+                        <div class="loader"></div>
+                    </div>
+
+                    <div id="quality-selector" class="SSC">
+                        <label for="Qualities" class="form-labels">Select Quality:</label>
+                        <select id="Qualities" name="Qualities">
+                            <option value="">Select Quality</option>
+                            <!-- other qualities -->
+                        </select>
+                        <button id="Quality-btn">Download</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="Waiting" id="Waiting-final">
+                <p id="Waiting-text-final" class="Waiting-text">Please Wait..</p>
+                <div class="loader"></div>
+            </div>
+
+            <!-- Download Link -->
+            <div id="download-link" class="download-link">
+                <p id="download-link-text">Download Link</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- BackGround Animation -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="/eel.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
